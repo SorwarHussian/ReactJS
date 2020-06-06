@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.css';
 import Header from './components/Header';
-import WeatherLocation from './components/WeatherLocation';
+import WeatherData from './components/WeatherData';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <div className='container-fluid'>
         <div className='row justify-content-center'>
           <Header />
-          <WeatherLocation />
+          <WeatherData />
         </div>
       </div>
 
