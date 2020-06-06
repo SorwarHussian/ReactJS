@@ -1,14 +1,18 @@
-import React from 'react'
-import WeatherTemperature from './WeatherTemperature'
+import React from "react";
+import WeatherTemperature from "./WeatherTemperature";
 
-const WeatherExtraInfo = () => {
-    return (
-        <div>
+const WeatherExtraInfo = (props) => {
+  const { humidity, wind } = props;
+  return (
+    <div>
+      <p>
+        <strong>
+          {humidity} | {wind}
+        </strong>
+      </p>
+      <WeatherTemperature />
+    </div>
+  );
+};
 
-          <WeatherTemperature/>
-            
-        </div>
-    )
-}
-
-export default WeatherExtraInfo
+export default WeatherExtraInfo;
